@@ -1,0 +1,815 @@
+# Anthrobot Morphology - Visual Vocabulary Olog
+# Version 1.0
+# Domain: Synthetic morphology, regenerative medicine, emergent biological form
+# 
+# Based on research by Michael Levin, Gizem Gumuskaya et al.
+# "Motile Living Biobots Self-Construct from Adult Human Somatic Progenitor Seed Cells"
+# Advanced Science (2023, 2025)
+#
+# Core concept: Adult human tracheal cells self-assemble into novel multicellular
+# forms with distinct morphologies and behaviors, demonstrating cellular plasticity
+# beyond default evolutionary targets.
+
+metadata:
+  domain: anthrobot_morphology
+  version: "1.0"
+  author: "Dal Marsters / Claude (Lushy Project)"
+  research_source: "Levin Lab, Tufts University"
+  primary_papers:
+    - "Gumuskaya et al. (2023) - Motile Living Biobots Self-Construct"
+    - "Gumuskaya et al. (2025) - Morphological, Behavioral, and Transcriptomic Life Cycle"
+  
+  lushy_integration:
+    layer_1: "Categorical morphological taxonomy"
+    layer_2: "Intentionality via morphospace navigation principles"
+    layer_3: "MCP server visual parameter generation"
+  
+  composition_potential:
+    - "Microscopy aesthetics (fluorescence imaging)"
+    - "Temporal progression (life cycle stages)"
+    - "Emergence patterns (self-assembly)"
+    - "Healing/repair dynamics (wound response)"
+    - "Scale relationships (30-500 micrometers)"
+
+# ==============================================================================
+# CATEGORICAL STRUCTURE - Layer 1
+# ==============================================================================
+
+types:
+  # Primary morphological classification (3 morphotypes from clustering)
+  
+  morphotype_1:
+    name: "Spherical Wiggler"
+    description: "Small spherical bodies with uniform cilia coverage, minimal displacement"
+    
+  morphotype_2:
+    name: "Asymmetric Circler"
+    description: "Irregular potato-shaped bodies with tightly clustered cilia, circular swimming"
+    
+  morphotype_3:
+    name: "Ellipsoidal Swimmer"
+    description: "Football-shaped bodies with dispersed cilia, straight-line movement"
+
+dimensions:
+  # 8-dimensional morphological space from published research
+  
+  body_size:
+    name: "Max Radius"
+    range: "30-500 micrometers"
+    scale_reference:
+      - "30-50 µm: Human hair thickness"
+      - "200-300 µm: Pencil point sharpness"
+      - "400-500 µm: Maximum observed size"
+    visual_impact: "Determines perceived scale relative to cellular context"
+    tokens:
+      - hair_thickness
+      - fine_point
+      - substantial_mass
+  
+  shape_geometry:
+    name: "Shape Smoothness"
+    description: "Uniformity of body boundary"
+    tokens:
+      - perfectly_spherical
+      - slightly_irregular
+      - potato_shaped
+      - ellipsoidal
+      - football_shaped
+    visual_signature: "Geometric silhouette clarity vs. organic irregularity"
+  
+  cilia_distribution:
+    name: "Cilia Localization Pattern"
+    description: "How cilia are arranged on the surface"
+    tokens:
+      - fully_ciliated: "Complete uniform coverage across entire surface"
+      - polar_clustered: "Tightly grouped in one hemisphere"
+      - dispersed_patches: "Loosely distributed across surface"
+      - partial_coverage: "Only one side or region ciliated"
+    intentionality: "Cilia pattern determines propulsion vector symmetry"
+  
+  body_polarization:
+    name: "Polarization State"
+    description: "Degree of structural asymmetry"
+    tokens:
+      - fully_polarized: "Clear anterior-posterior or apical-basal axis"
+      - weakly_polarized: "Subtle directional bias"
+      - radially_symmetric: "No preferred direction, spherical"
+    morphism_to: "Affects movement directionality"
+  
+  cilia_density:
+    name: "Cilia Coverage Density"
+    description: "Proportion of surface area with cilia"
+    range: "0-100%"
+    visual_quality: "Textural richness vs. smooth patches"
+    tokens:
+      - sparse: "< 30% coverage"
+      - moderate: "30-70% coverage"
+      - dense: "70-100% coverage"
+  
+  cilia_length:
+    name: "Ciliary Hair Length"
+    description: "Length of individual cilia relative to body size"
+    visual_signature: "Corona texture - delicate fringe vs. robust bristles"
+    tokens:
+      - fine_corona: "Delicate, barely visible fringe"
+      - moderate_corona: "Clearly visible hair-like extensions"
+      - prominent_corona: "Substantial ciliary projection"
+  
+  surface_character:
+    name: "Surface Texture Quality"
+    description: "Overall surface appearance"
+    tokens:
+      - smooth_membrane: "Clean cellular boundary, minimal texture"
+      - ciliated_corona: "Halo of moving cilia"
+      - textured_surface: "Visible cellular architecture"
+      - patchy_mosaic: "Irregular ciliated/non-ciliated regions"
+  
+  structural_coherence:
+    name: "Multicellular Organization"
+    description: "How tightly cells are integrated"
+    tokens:
+      - tightly_integrated: "Seamless multicellular body"
+      - loose_aggregate: "Visible individual cell boundaries"
+      - intermediate_fusion: "Cellular structure visible but cohesive"
+
+# Movement Vocabulary (emergent from morphology)
+
+movement_types:
+  stationary_wiggler:
+    morphological_cause: "Spherical + uniform cilia = force cancellation"
+    speed: "0-5 micrometers/second"
+    trajectory: "Random small displacements, no net travel"
+    visual_signature: "Trembling in place, corona shimmer"
+    intentionality: "Radial symmetry eliminates directional bias"
+  
+  circular_swimmer:
+    morphological_cause: "Asymmetric body + polar cilia cluster = rotational torque"
+    speed: "10-30 micrometers/second"
+    trajectory: "Tight loops, circular or spiral paths"
+    visual_signature: "Spinning motion, curved wake"
+    intentionality: "Off-center propulsion creates moment arm"
+  
+  straight_swimmer:
+    morphological_cause: "Ellipsoidal + dispersed cilia = balanced thrust"
+    speed: "20-50 micrometers/second"
+    trajectory: "Linear or gently curved paths"
+    visual_signature: "Directional gliding, elongated form axis-aligned"
+    intentionality: "Distributed propulsion with body asymmetry creates net vector"
+  
+  combined_mover:
+    morphological_cause: "Intermediate morphology, variable cilia pattern"
+    speed: "Variable 5-40 micrometers/second"
+    trajectory: "Mixed linear and circular segments"
+    visual_signature: "Unpredictable path changes, exploratory motion"
+
+# Life Cycle Stages (temporal dimension)
+
+life_stages:
+  progenitor_cell:
+    timepoint: "Day -14 (culture start)"
+    morphology: "Single tracheal epithelial cell"
+    visual: "Typical cuboidal epithelial cell with apical cilia"
+    gene_expression: "Adult lung cell signature"
+    
+  early_spheroid:
+    timepoint: "Day -7 to Day 0"
+    morphology: "Multicellular aggregate forming, cilia pointing inward"
+    visual: "Hollow sphere with interior cilia (apical-in state)"
+    gene_expression: "Transition - embryonic patterning genes activating"
+    event: "Self-assembly in extracellular matrix gel"
+  
+  eversion:
+    timepoint: "Day 0 to Day 3"
+    morphology: "Spheroid turning inside-out"
+    visual: "Dramatic reorganization, cilia reorienting to surface"
+    gene_expression: "Germ layer markers (FOXA1, FOXA2, BMP7)"
+    intentionality: "Critical morphogenetic event enabling motility"
+  
+  mature_anthrobot:
+    timepoint: "Day 10+"
+    morphology: "Stable motile form with exterior cilia"
+    visual: "Corona of outward-facing cilia, defined morphotype"
+    gene_expression: "Ancient genes + axis formation markers"
+    epigenetic_state: "Biologically younger than source cells!"
+    behavior: "Swimming, wound-seeking, bridge formation"
+  
+  senescence:
+    timepoint: "Day 45-60"
+    morphology: "Structural breakdown beginning"
+    visual: "Cilia loss, shape degradation"
+    fate: "Natural biodegradation, complete dissolution"
+
+# Behavioral Dimensions (functional properties)
+
+behaviors:
+  self_assembly:
+    description: "Autonomous multicellular organization from single cell"
+    visual_signature: "Emergent form without external sculpting"
+    intentionality: "Cells navigate morphospace toward attractor states"
+  
+  motility:
+    description: "Self-propelled movement via coordinated cilia beating"
+    visual_signature: "Corona shimmer, directional displacement"
+    mechanism: "Ciliary rowing against aqueous medium"
+  
+  wound_seeking:
+    description: "Preferential movement toward damaged neural tissue"
+    visual_signature: "Directional migration to scratch/tear"
+    mechanism: "Unknown - possibly chemotaxis or bioelectric sensing"
+  
+  bridge_formation:
+    description: "Aggregation across wound gap, forming cellular connection"
+    visual_signature: "Ant bridge structure spanning injury"
+    healing_effect: "Neural regrowth across anthrobot bridge"
+    intentionality: "Collective scaffolding enables tissue reconnection"
+  
+  shape_memory:
+    description: "Self-repair back to original morphotype after injury"
+    visual_signature: "Reformation of spherical/ellipsoidal structure"
+    intentionality: "Active homeostatic morphology maintenance"
+  
+  collective_swarming:
+    description: "Coordinated group behavior, swarm intelligence"
+    visual_signature: "Multiple bots moving in concert"
+    scalability: "Thousands of bots can be produced in parallel"
+
+# ==============================================================================
+# IMAGING AESTHETICS - Fluorescence Microscopy Vocabulary
+# ==============================================================================
+
+imaging_modalities:
+  fluorescence_multichannel:
+    description: "Standard immunocytochemistry imaging protocol"
+    
+    channels:
+      cilia_marker:
+        stain: "Acetylated α-tubulin (acctub)"
+        color: "Yellow/green"
+        targets: "Ciliary microtubules"
+        visual_effect: "Highlights corona of motile hairs"
+      
+      tight_junctions:
+        stain: "ZO-1 (zonula occludens)"
+        color: "Red"
+        targets: "Apical layer cell boundaries"
+        visual_effect: "Defines surface architecture"
+      
+      nuclei:
+        stain: "DAPI or similar"
+        color: "Blue"
+        targets: "Cell nuclei"
+        visual_effect: "Reveals cellular organization"
+      
+      basal_cells:
+        stain: "Basal cell markers"
+        color: "Green"
+        targets: "Cellular baseline"
+        visual_effect: "Shows body structure"
+    
+    composite_aesthetic:
+      corona_effect: "Yellow cilia corona against blue nuclei core"
+      depth_perception: "Z-stack reveals 3D spheroidal structure"
+      color_harmony: "Blue-green-yellow-red palette (scientific realism)"
+  
+  depth_coloring:
+    description: "Pseudocolor coding for 3D depth"
+    visual_effect: "Single-color gradient showing spheroid topology"
+    aesthetic: "Topographic map appearance, volumetric presence"
+  
+  brightfield_microscopy:
+    description: "Standard light microscopy"
+    visual_effect: "Translucent body, visible cilia motion as shimmer"
+    aesthetic: "Clean scientific documentation, minimal processing"
+
+# Scale Context (critical for visual anchoring)
+
+scale_references:
+  cellular_scale:
+    anthrobot_size: "30-500 micrometers"
+    comparison:
+      - "Human hair: ~70 micrometers diameter"
+      - "Red blood cell: ~8 micrometers"
+      - "Neuron cell body: ~10-100 micrometers"
+      - "Paramecium (ciliate): ~50-300 micrometers"
+    visual_niche: "Between nanotechnology and macroscale devices"
+  
+  relative_to_source:
+    single_cell: "~10-20 micrometers (cuboidal epithelial)"
+    mature_bot: "30-500 micrometers (15-50 cells assembled)"
+    scaling_factor: "3-50x linear dimension increase"
+
+# ==============================================================================
+# MORPHISMS - Structural Relationships
+# ==============================================================================
+
+morphisms:
+  shape_to_movement:
+    description: "Body geometry determines locomotion type"
+    
+    mappings:
+      spherical_symmetric:
+        shape: perfectly_spherical
+        cilia: fully_ciliated_uniform
+        movement: stationary_wiggler
+        reason: "Forces cancel due to radial symmetry"
+      
+      asymmetric_compact:
+        shape: potato_shaped
+        cilia: polar_clustered
+        movement: circular_swimmer
+        reason: "Off-center thrust creates rotational torque"
+      
+      elongated_balanced:
+        shape: ellipsoidal
+        cilia: dispersed_patches
+        movement: straight_swimmer
+        reason: "Distributed propulsion + body axis = directional vector"
+  
+  size_to_behavior:
+    description: "Larger bots have different movement characteristics"
+    
+    mappings:
+      small_bots:
+        size_range: "30-100 micrometers"
+        tendency: "More likely to be wigglers"
+        reason: "Surface tension effects stronger at small scale"
+      
+      medium_bots:
+        size_range: "100-300 micrometers"
+        tendency: "Mixed movement types"
+        reason: "Optimal size for cilia propulsion efficiency"
+      
+      large_bots:
+        size_range: "300-500 micrometers"
+        tendency: "Slower, more stable trajectories"
+        reason: "Increased mass, inertial effects"
+  
+  stage_to_capability:
+    description: "Life cycle stage determines functional abilities"
+    
+    mappings:
+      progenitor:
+        capabilities: ["adhesion", "proliferation"]
+        visual: "Standard epithelial cell"
+      
+      early_spheroid:
+        capabilities: ["aggregation", "self-organization"]
+        visual: "Forming multicellular structure"
+      
+      mature_bot:
+        capabilities: ["motility", "wound_seeking", "healing_induction"]
+        visual: "Ciliated corona, active swimming"
+      
+      senescent:
+        capabilities: ["degradation"]
+        visual: "Deteriorating structure"
+
+# ==============================================================================
+# INTENTIONALITY - Layer 2 (Why This Works)
+# ==============================================================================
+
+intentionality:
+  core_principle:
+    concept: "Morphological Attractor States"
+    explanation: |
+      Adult cells, freed from tissue-level constraints, navigate morphospace
+      toward stable forms determined by physical forces, bioelectric patterns,
+      and collective cell intelligence - not genetic programming alone.
+    
+    levin_framework: |
+      Cells are not passive agents following blueprints. They are problem-solving
+      agents with inherent competencies navigating toward "target morphologies"
+      from a Platonic space of possible forms. The genome provides hardware
+      (receptors, ion channels, enzymes), while emergent bioelectric/biomechanical
+      forces provide the software guiding morphogenesis.
+  
+  symmetry_determines_motion:
+    principle: "Propulsion Vector Cancellation"
+    physics: |
+      At low Reynolds number (Re < 0.1), viscous forces dominate. Radially
+      symmetric cilia beating produces forces that cancel out (Scallop Theorem).
+      Asymmetry is REQUIRED for net displacement.
+    
+    visual_consequence: |
+      Spherical bots with uniform cilia create beautiful shimmering coronas
+      but minimal travel - visual energy without displacement. Asymmetric bots
+      with polar cilia clusters create directional gliding - form following
+      function at cellular scale.
+  
+  self_assembly_emergence:
+    principle: "Bottom-up Morphogenesis Without Blueprint"
+    mechanism: |
+      No external sculpting, no genetic editing. Cells aggregate based on:
+      - Adhesion molecule expression
+      - Bioelectric signaling between cells
+      - Mechanical forces in ECM gel
+      - Chemical gradient sensing
+      - Collective cell decision-making
+    
+    visual_signature: |
+      The PROCESS of assembly is invisible in static images, but the RESULT
+      shows organized multicellular architecture that cells collectively
+      "discovered" through exploration of morphospace.
+  
+  age_reversal_paradox:
+    principle: "Epigenetic Clock Reset Through Reorganization"
+    discovery: |
+      Mature anthrobots show younger epigenetic age than source adult cells.
+      Simply reorganizing into new morphology RESETS cellular aging markers.
+    
+    gene_expression: |
+      Ancient genes (shared with single-celled ancestors) + embryonic patterning
+      genes (germ layers, axis formation) activate during anthrobot assembly.
+      Cells express developmental programs despite being post-mitotic adults.
+    
+    philosophical_implication: |
+      Form and function are not fixed by cell type. Morphological context
+      CAN reprogram cellular state. Shape influences gene expression, not
+      just vice versa.
+  
+  wound_healing_mechanism:
+    principle: "Bioelectric Scaffolding for Regeneration"
+    hypothesis: |
+      Anthrobots may use bioelectric signaling to:
+      1. Sense damaged tissue (voltage gradients at wound)
+      2. Navigate toward injury
+      3. Form physical bridge
+      4. Emit signals that guide neural regrowth
+    
+    visual_signature: |
+      "Ant bridge" formation - multiple bots aggregate spanning gap, creating
+      visible cellular connection between separated tissue edges. New neurons
+      grow ACROSS this living scaffold.
+  
+  cilia_as_computational_element:
+    principle: "Distributed Sensing and Actuation"
+    mechanism: |
+      Each cilium is mechanosensitive AND motile. The collective beating
+      pattern emerges from:
+      - Local cilium-to-cilium coordination
+      - Chemical signaling within cell
+      - Mechanical coupling through aqueous medium
+      - No central control - distributed computation
+    
+    visual_consequence: |
+      Corona "shimmer" represents real-time distributed computation happening
+      at ciliary level. Pattern is emergent, not centrally programmed.
+
+# ==============================================================================
+# VISUAL PARAMETER GENERATION - Layer 3 Preparation
+# ==============================================================================
+
+visual_parameters:
+  # These are the deterministic mappings for MCP tools to use
+  
+  morphotype_to_silhouette:
+    morphotype_1:
+      shape_descriptor: "Perfect sphere, uniform outline"
+      edge_quality: "Smooth circular boundary"
+      aspect_ratio: "1.0 (equidimensional)"
+    
+    morphotype_2:
+      shape_descriptor: "Irregular ovoid, potato-like contour"
+      edge_quality: "Undulating boundary, organic irregularity"
+      aspect_ratio: "1.2-1.5 (slightly elongated)"
+    
+    morphotype_3:
+      shape_descriptor: "Ellipsoid, football-shaped"
+      edge_quality: "Smooth elongated form"
+      aspect_ratio: "1.8-2.5 (clearly directional)"
+  
+  cilia_corona_rendering:
+    fully_ciliated:
+      visual: "Complete halo of fine yellow/green lines radiating outward"
+      density: "Dense fringe, no gaps"
+      motion_blur: "Uniform shimmer across entire surface"
+    
+    polar_clustered:
+      visual: "Concentrated tuft at one pole, bare surface elsewhere"
+      density: "Dense cluster contrasting with smooth regions"
+      motion_blur: "Asymmetric blur indicating directional thrust"
+    
+    dispersed_patches:
+      visual: "Multiple small ciliated regions, patchy coverage"
+      density: "Medium - visible gaps between ciliated areas"
+      motion_blur: "Multiple blur centers creating balanced propulsion"
+  
+  scale_visualization:
+    microscale_context:
+      grid_reference: "10 micrometer calibration bars"
+      comparison_objects: "Include cellular debris, possible bacteria for scale"
+      depth_of_field: "Shallow - emphasize focal plane, blur background"
+    
+    swarm_context:
+      multiple_bots: "Show 3-10 anthrobots in frame"
+      size_variation: "Mix of small (50µm) and large (400µm) for diversity"
+      spatial_distribution: "Natural clustering vs. dispersed"
+  
+  movement_visualization:
+    trajectory_traces:
+      static_image: "Motion blur direction indicating movement type"
+      time_lapse: "Trail lines showing path history"
+      velocity_encoding: "Color/opacity gradient for speed"
+    
+    behavioral_state:
+      active_swimming: "Sharp cilia details, directional blur"
+      stationary_wiggling: "Slight tremor blur, no displacement trail"
+      wound_seeking: "Multiple bots converging toward injury site"
+      bridge_formation: "Linear arrangement spanning gap"
+  
+  imaging_style_palette:
+    scientific_documentation:
+      colors: "Standard fluorescence - blue, green, yellow, red"
+      background: "Black (fluorescence microscopy standard)"
+      contrast: "High - clear channel separation"
+      aesthetic: "Clean, publishable quality"
+    
+    artistic_interpretation:
+      colors: "Enhanced saturation, artistic color grading"
+      background: "Deep blue-black, cosmic quality"
+      contrast: "Dramatic - emphasize corona glow"
+      aesthetic: "Otherworldly, bioluminescent quality"
+    
+    depth_map_visualization:
+      colors: "Single-hue gradient (cool to warm)"
+      rendering: "3D topographic appearance"
+      effect: "Volumetric presence, sculptural quality"
+      aesthetic: "Technical/architectural visualization"
+
+# ==============================================================================
+# COMPOSITION POTENTIAL - Multi-Domain Integration
+# ==============================================================================
+
+composition_targets:
+  microscopy_aesthetics_domain:
+    shared_structure:
+      - "Fluorescence imaging protocols"
+      - "Scale relationships (micrometer range)"
+      - "Z-stack depth rendering"
+    
+    natural_transformation:
+      source: anthrobot_morphology
+      target: microscopy_aesthetics
+      components:
+        cilia_corona: "ciliary_texture_pattern"
+        body_shape: "specimen_geometry"
+        fluorescence_channels: "multi_channel_composite"
+  
+  temporal_progression_domain:
+    shared_structure:
+      - "Life cycle stages"
+      - "Morphogenetic transitions"
+      - "Time-lapse sequences"
+    
+    natural_transformation:
+      source: anthrobot_morphology
+      target: temporal_aesthetics
+      components:
+        progenitor_to_mature: "developmental_arc"
+        eversion_event: "critical_transition"
+        senescence: "decline_sequence"
+  
+  emergence_patterns_domain:
+    shared_structure:
+      - "Self-assembly dynamics"
+      - "Bottom-up organization"
+      - "Attractor states"
+    
+    conceptual_bridge:
+      cellular_self_assembly: "emergence_without_blueprint"
+      morphospace_navigation: "attractor_dynamics"
+      collective_intelligence: "distributed_computation"
+  
+  healing_repair_domain:
+    shared_structure:
+      - "Wound response"
+      - "Bridge formation"
+      - "Tissue regeneration"
+    
+    functional_mapping:
+      wound_seeking: "damage_detection_mechanism"
+      bridge_formation: "scaffolding_architecture"
+      healing_induction: "regenerative_signaling"
+
+# ==============================================================================
+# MCP SERVER TOOL SPECIFICATIONS
+# ==============================================================================
+
+mcp_tools:
+  generate_anthrobot_morphology:
+    description: "Generate complete visual parameters for an anthrobot"
+    
+    inputs:
+      morphotype: "Choice of morphotype_1, morphotype_2, or morphotype_3"
+      size_category: "small (30-100µm), medium (100-300µm), large (300-500µm)"
+      life_stage: "progenitor, early_spheroid, eversion, mature, senescent"
+      imaging_style: "scientific, artistic, depth_map"
+    
+    outputs:
+      silhouette_geometry: "Shape description and aspect ratio"
+      cilia_corona: "Pattern, density, rendering details"
+      movement_signature: "Trajectory type and speed range"
+      fluorescence_palette: "Color channel assignments"
+      scale_context: "Reference objects and calibration"
+      behavioral_state: "Functional activity description"
+    
+    layer_assignment: "Layer 2 → Layer 3 bridge"
+  
+  map_morphology_to_behavior:
+    description: "Deterministic mapping from form to function"
+    
+    inputs:
+      shape: "spherical, potato_shaped, ellipsoidal"
+      cilia_pattern: "fully_ciliated, polar_clustered, dispersed_patches"
+    
+    outputs:
+      movement_type: "stationary_wiggler, circular_swimmer, straight_swimmer"
+      speed_range: "Micrometers per second"
+      trajectory: "Path description"
+      intentionality: "Physical explanation of why"
+    
+    layer_assignment: "Pure Layer 2 - deterministic morphism"
+  
+  generate_life_cycle_sequence:
+    description: "Temporal progression visual parameters"
+    
+    inputs:
+      start_stage: "Which life stage to begin"
+      end_stage: "Which life stage to end"
+      frame_count: "Number of intermediate frames"
+    
+    outputs:
+      stage_sequence: "Ordered list of stage parameters"
+      transition_events: "Key morphogenetic moments"
+      gene_expression_overlay: "Optional transcriptomic context"
+      visual_progression: "How appearance changes over time"
+    
+    layer_assignment: "Layer 3 - synthesis preparation"
+  
+  compose_with_microscopy:
+    description: "Natural transformation to microscopy domain"
+    
+    inputs:
+      anthrobot_params: "Generated morphology parameters"
+      microscopy_domain: "Target microscopy MCP server"
+    
+    outputs:
+      unified_parameters: "Merged visual specification"
+      imaging_protocol: "Recommended microscopy settings"
+      channel_mapping: "Fluorescence to visual channels"
+    
+    layer_assignment: "Cross-domain composition"
+  
+  simulate_swarm_behavior:
+    description: "Generate parameters for multiple anthrobots"
+    
+    inputs:
+      bot_count: "Number of anthrobots (3-20)"
+      morphotype_distribution: "Mix ratios of morphotypes"
+      behavior: "swimming, wound_seeking, bridge_formation"
+    
+    outputs:
+      swarm_composition: "Individual bot parameters"
+      spatial_arrangement: "Positioning and clustering"
+      collective_behavior: "Emergent group dynamics"
+      visual_complexity: "Overall scene richness"
+    
+    layer_assignment: "Layer 3 - complex scene synthesis"
+
+# ==============================================================================
+# EXAMPLE COMPOSITIONS
+# ==============================================================================
+
+examples:
+  example_1_mature_circler:
+    morphotype: morphotype_2
+    size: 150  # micrometers
+    life_stage: mature
+    imaging_style: scientific
+    
+    output_sketch: |
+      Irregular potato-shaped organoid, ~150 micrometers diameter
+      (1.5x human hair thickness). Yellow-green cilia corona concentrated
+      at upper pole (polar_clustered pattern), creating asymmetric propulsion.
+      Blue DAPI-stained nuclei (15-20 cells) visible in core. Red ZO-1
+      tight junctions outline cellular boundaries. Slight motion blur at
+      cilia cluster indicates rotational thrust. Swimming in tight circular
+      path (30 micrometers/second). Black background (fluorescence microscopy).
+      Shallow depth of field emphasizing focal plane.
+  
+  example_2_spherical_wiggler_swarm:
+    morphotype: morphotype_1
+    count: 7
+    size_range: [50, 100]  # micrometers
+    life_stage: mature
+    imaging_style: artistic
+    
+    output_sketch: |
+      Cluster of seven small spherical anthrobots (50-100µm), each with
+      complete yellow corona of fine cilia creating bioluminescent halo effect.
+      Perfect spherical silhouettes, minimal displacement (wigglers). Deep
+      cosmic blue-black background. Enhanced saturation - glowing appearance.
+      Some bots in sharp focus, others slightly defocused creating depth.
+      Gentle shimmer blur across all cilia surfaces. Resembles cluster of
+      microscopic jellyfish or celestial bodies. Otherworldly aesthetic.
+  
+  example_3_wound_healing_sequence:
+    behavior: bridge_formation
+    anthrobot_count: 5
+    life_stage: mature
+    imaging_style: scientific
+    temporal: true
+    
+    output_sketch: |
+      Three-frame temporal sequence showing wound repair:
+      
+      Frame 1 (T=0): Scratch through red neural cell layer (vertical gap,
+      200µm wide). Five anthrobots (morphotype 2 & 3) at left edge, various
+      orientations.
+      
+      Frame 2 (T=30min): Anthrobots migrated into gap, beginning to align.
+      Linear arrangement forming. Cilia visible as yellow coronas. Movement
+      trajectories indicated by faint trails.
+      
+      Frame 3 (T=2hr): Complete "ant bridge" - five bots linearly arranged
+      spanning gap. Green neural regrowth visible crossing the bridge.
+      Bridge structure acting as cellular scaffold. Scientific documentation
+      aesthetic - clear before/during/after progression.
+
+# ==============================================================================
+# INTENTIONALITY PRINCIPLES FOR CLAUDE SYNTHESIS
+# ==============================================================================
+
+synthesis_guidance:
+  for_claude_creative_synthesis:
+    |
+    When synthesizing final visual descriptions from these parameters:
+    
+    1. SCALE ANCHORING: Always ground the micrometer scale in familiar terms
+       (hair thickness, pencil point) - humans cannot intuitively grasp
+       micrometers without reference objects.
+    
+    2. MOTION SIGNATURE: Emphasize the RELATIONSHIP between form and movement.
+       Spherical = wiggling is not arbitrary - it's physics. Make the causality
+       visible through motion blur, trajectory indicators.
+    
+    3. EMERGENT BEAUTY: These are not "designed" - they self-assembled. The
+       aesthetic should feel ORGANIC, DISCOVERED, not engineered. Slight
+       irregularities are features, not bugs.
+    
+    4. CORONA AS CHARACTER: The cilia corona is the visual signature. It's
+       simultaneously:
+       - Functional (propulsion mechanism)
+       - Aesthetic (shimmering halo)
+       - Computational (distributed sensing)
+       Make it central to every description.
+    
+    5. SCIENTIFIC RIGOR MEETS WONDER: Balance technical accuracy with sense
+       of profound biological innovation. These are adult cells becoming
+       biologically YOUNGER by reorganizing. That's astonishing.
+    
+    6. PLATONIC MORPHOSPACE: When appropriate, evoke Levin's concept - these
+       forms are not random, they're "target morphologies" that cells navigate
+       toward. There's an invisible landscape of possible forms, and we're
+       seeing explorations of that space.
+    
+    7. AVOID: 
+       - Mechanical/robotic language (they're alive, not machines)
+       - Artificial/synthetic aesthetics (they're biological)
+       - Perfect symmetry (organic forms have variation)
+       - Static descriptions (they're always moving/shimmering)
+
+# ==============================================================================
+# RESEARCH ATTRIBUTION
+# ==============================================================================
+
+citations:
+  primary_source: |
+    Gumuskaya, G., Srivastava, P., Cooper, B.G., Lesser, H., Semegran, B.,
+    Garnier, S., and Levin, M. (2023). "Motile Living Biobots Self-Construct
+    from Adult Human Somatic Progenitor Seed Cells." Advanced Science.
+    doi: 10.1002/advs.202303575
+  
+  life_cycle_source: |
+    Gumuskaya, G., Davey, N., Srivastava, P., Bender, A., Pio-Lopez, L.,
+    Hazel, D., and Levin, M. (2025). "The Morphological, Behavioral, and
+    Transcriptomic Life Cycle of Anthrobots." Advanced Science.
+    doi: 10.1002/advs.202409330
+  
+  levin_philosophy: |
+    Levin, M. (2024). "Ingressing Minds: Causal Patterns Beyond Genetics
+    and Environment in Natural, Synthetic, and Hybrid Embodiments."
+    [Platonic morphospace framework]
+  
+  educational_gateway:
+    description: |
+      Point users toward Levin Lab's research for deeper understanding of:
+      - Morphological computation
+      - Bioelectric signaling in development
+      - Synthetic morphology as research platform
+      - Regenerative medicine applications
+    
+    links:
+      - "https://drmichaellevin.org (Levin Lab)"
+      - "https://thoughtforms.life (Levin's blog)"
+      - "Tufts University Allen Discovery Center"
