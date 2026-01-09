@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "anthrobot-morphology-mcp"
+version = "1.0.0"
+description = "Lushy visual vocabulary MCP server for Michael Levin's anthrobots - synthetic biological organisms"
+authors = [
+    {name = "Dal Marsters", email = "dal@lushy.app"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+keywords = ["mcp", "lushy", "visual-vocabulary", "synthetic-biology", "anthrobots", "microscopy", "levin-lab"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+    "Topic :: Scientific/Engineering :: Visualization",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+dependencies = [
+    "fastmcp>=0.1.0",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-asyncio>=0.21.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/lushy-ai/anthrobot-morphology-mcp"
+Documentation = "https://github.com/lushy-ai/anthrobot-morphology-mcp#readme"
+Repository = "https://github.com/lushy-ai/anthrobot-morphology-mcp"
+"Bug Reports" = "https://github.com/lushy-ai/anthrobot-morphology-mcp/issues"
+
+[tool.setuptools]
+packages = ["anthrobot_morphology_mcp"]
+package-dir = {"" = "src"}
+
+[tool.setuptools.package-data]
+anthrobot_morphology_mcp = ["*.yaml"]
